@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pych-client"
+name = "pych-client-elena"
 version = "0.4.0"
 description = "A ClickHouse client for Python, with a command-line interface."
 authors = ["Maxime Mouchet <maxime.mouchet@lip6.fr>"]
@@ -7,6 +7,9 @@ license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/dioptra-io/pych-client"
 
+packages = [
+    { include = "pych_client" }
+]
 [tool.poetry.dependencies]
 python = "^3.8"
 httpx = "^0.25.0"
